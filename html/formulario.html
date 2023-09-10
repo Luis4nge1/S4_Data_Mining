@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <title>Proyecto sistema experto</title>
+    <!-- Favicons -->
+    <link href="../img/logo.png" rel="icon">
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="../index.html" class="logo d-flex align-items-center">
+                <img src="../img/logo.png" alt="">
+                <h1>Sistema Experto<span>.</span></h1>
+            </a>
+
+        </div>
+    </header>
+    <!-- End Header -->
+
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <div class="breadcrumbs d-flex align-items-center"
+            style="background-image: url('../img/form.jpg');">
+            <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+                <h2>TEST</h2>
+
+
+            </div>
+        </div><!-- End Breadcrumbs -->
+
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h4>Responde las siguientes preguntas para obtener una recomendación.</h4>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-2 text-center">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+
+                    <div class="card preg">
+                        <div class="card-herader bg-warning">
+                            <h3 class="text-white">PREGUNTAS TEST</h3>
+                        </div>
+                         <!-- ======= pregunta======= -->
+                        <div class="card-body2" id="pregunta1">
+                            <h2>¿Te gustan las matemáticas?</h2>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('pregunta2')">Si</a>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('pregunta4')">No</a>
+                        </div>
+
+                         <!-- ======= pregunta======= -->
+                        <div class="card-body" id="pregunta2">
+                            <h2>¿Disfrutas construyendo o arreglando cosas?</h2>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('pregunta3')">Si</a>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('pregunta3')">No</a>
+                        </div>
+
+                        <!-- ======= pregunta======= -->
+                        <div class="card-body" id="pregunta3">
+                            <h2>¿Te interesan los proyectos de construcción y la creación de infraestructuras?</h2>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('finalSi')">Si</a>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('finalSinRes')">No</a>
+                        </div>
+                         <!-- ======= pregunta======= -->
+                        <div class="card-body" id="pregunta4">
+                            <h2>¿Me gusta la lectura?</h2>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('pregunta6')">Si</a>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('finalSinRes')">No</a>
+                        </div>
+                         <!-- ======= pregunta======= -->
+                        <div class="card-body" id="pregunta5">
+                            <h2>¿Te consideras persona ética y responsable la cual es capaz de mantener la calma bajo
+                                presión?</h2>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('finalNo')">Si</a>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('pregunta8')">No</a>
+                        </div>
+                         <!-- ======= pregunta======= -->
+                        <div class="card-body" id="pregunta6">
+                            <h2>En el colegio era o soy bueno en cursos de letras como lenguaje, literatura o historia
+                            </h2>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('pregunta5')">Si</a>
+                            <a type="button" class="btn btn-primary next-question"
+                                onclick="mostrarDiv('finalSinRes')">No</a>
+                        </div>
+
+
+                        <div class="card-body" id="finalNo">
+                            <p>Diagnóstico: No tienes Covid-19</p>
+                            <a type="button" class="btn btn-primary next-question" href="../html/formulario.html">Reiniciar
+                                Test</a>
+                        </div>
+
+                        <!-- ======= resderecho======= -->
+                        <div class="card-body" id="finalSi">
+                            <p>Diagnóstico: Tienes Covid-19</p>
+                            <a type="button" class="btn btn-primary next-question" href="../html/formulario.html">Reinicial
+                                Test</a>
+                        </div>
+
+                        <!-- ======= sinres======= -->
+                        <div class="card-body" id="finalSinRes">
+                            <h5>Lo siento, no se encontró la cura.</h5>
+                            <a type="button" class="btn btn-primary next-question"
+                                href="../html/formulario.html">Reinicial Test</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="../js/script.js"></script>
+    <script>
+        const preloader = document.querySelector('#preloader');
+        if (preloader) {
+            window.addEventListener('load', () => {
+                preloader.remove();
+            });
+        }
+    </script>
+</body>
+
+</html>
